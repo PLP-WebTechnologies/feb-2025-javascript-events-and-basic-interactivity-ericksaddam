@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Event Handling & Interactive Elements</h1>
+        <p>Welcome to the ultimate JavaScript playground!</p>
+    </header>
+
+    <main>
+        <!-- 1. Event Handling Section -->
+        <section id="event-handling">
+            <h2>Event Handling 🎈</h2>
+            
+            <!-- Button Click -->
+            <div class="card">
+                <h3>Button Click</h3>
+                <button id="click-btn">Click Me!</button>
+                <p id="click-output">Click the button to see what happens!</p>
+            </div>
+            
+            <!-- Hover Effects -->
+            <div class="card">
+                <h3>Hover Effects</h3>
+                <div id="hover-box">Hover over me!</div>
+            </div>
+            
+            <!-- Keypress Detection -->
+            <div class="card">
+                <h3>Keypress Detection</h3>
+                <input type="text" id="key-input" placeholder="Type something...">
+                <p id="key-output">Press any key to see it displayed here</p>
+            </div>
+            
+            <!-- Bonus: Double-click -->
+            <div class="card">
+                <h3>Secret Action 🤫</h3>
+                <div id="secret-box">Double-click me for a surprise!</div>
+            </div>
+        </section>
+
+        <!-- 2. Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <!-- Color Changing Button -->
+            <div class="card">
+                <h3>Color Changing Button</h3>
+                <button id="color-btn">Change My Color</button>
+            </div>
+            
+            <!-- Image Gallery -->
+            <div class="card">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <img id="gallery-img" src="images/pexels-pixabay-414860.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button id="prev-btn">Previous</button>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="card">
+                <h3>Tabs</h3>
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <p>This is the content for Tab 1. Welcome to the first tab!</p>
+                        </div>
+                        <div id="tab2" class="tab-pane">
+                            <p>This is the content for Tab 2. You've discovered the second tab!</p>
+                        </div>
+                        <div id="tab3" class="tab-pane">
+                            <p>This is the content for Tab 3. You've reached the final tab!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Form Validation Section -->
+        <section id="form-validation">
+            <h2>Form Validation 📋✅</h2>
+            <div class="card">
+                <form id="validation-form">
+                    <div class="form-group">
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password (min 8 characters)</label>
+                        <input type="password" id="password" required>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" required>
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn">Submit</button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for JavaScript Event Handling & Interactive Elements Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
